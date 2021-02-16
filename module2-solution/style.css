@@ -6,6 +6,7 @@ h1 {
   font-family: 'Reggae One', cursive;
   text-align: center;
   color: #ff7b99;
+  font-size: 60px;
 }
 
 body  {
@@ -18,8 +19,18 @@ p {
 .menusection {
   background-color: #ffced9;
   border: 1px solid black;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   margin: 20px;
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 20px;
+  background: #572893;
+  color: #ffffff;
 }
 
 /* Simple Responsive Framework. */
