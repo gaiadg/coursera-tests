@@ -564,7 +564,8 @@ th {
 .glyphicon-ban-circle:before {
   content: "\e090";
 }
-.glyphicon-arrow-left:before {
+.glyphicon-arrow-lefglyphicon-info-sign
+t:before {
   content: "\e091";
 }
 .glyphicon-arrow-right:before {

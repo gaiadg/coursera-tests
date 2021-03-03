@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   background-color: #000000;
-  font-family: 'Libre Baskerville', Sans Serif;
+  font-family: 'Roboto', Sans Serif;
 }
 
 /*header*/
@@ -13,6 +13,7 @@ body {
 	border-bottom: #ffffff solid 3px;
 }
 
+
 #logo-img {
 	background: url('../img/logo.png') no-repeat;
 	width: 150px;
@@ -22,6 +23,7 @@ body {
 
 .navbar-brand {
 	padding-top: 25px;
+	height: 80px;
 }
 
 .navbar-brand h1 { /*Restaurant Name*/
@@ -45,6 +47,43 @@ body {
 	margin-top: 15px;
 }
 
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #ffffff;
+  text-align: center;
+}
+#nav-list a:hover {
+	border: 1;
+	border-bottom: #ffffff solid 3px;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #ffffff;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #a40203;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/*header*/
 
 
 h1 {
