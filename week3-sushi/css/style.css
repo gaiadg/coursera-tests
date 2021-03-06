@@ -1,3 +1,9 @@
+.clearfix {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 body {
   font-size: 16px;
   color: #fff;
@@ -11,6 +17,7 @@ body {
 	border-radius: 0;
 	border: 0;
 	border-bottom: #ffffff solid 3px;
+	margin-bottom: 0px;
 }
 
 
@@ -23,7 +30,7 @@ body {
 
 .navbar-brand {
 	padding-top: 25px;
-	height: 80px;
+	height: 100%;
 }
 
 .navbar-brand h1 { /*Restaurant Name*/
@@ -78,12 +85,75 @@ body {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #a40203;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -60px;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.container .jumbotron {
+	padding: 0px;
 }
 
 /*header*/
+
+/*large devices only*/
+@media (min-width: 1200px) {
+
+	.container .jumbotron {
+		background: url("https://www.thingstododubai.com/restaurant-ramusake-dubai-picture.mjr6nc.max.jpg");
+		height: 700px;
+	}
+}
+
+/*medium devices only*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* DOESN'T WORK IMG
+	#logo-img {
+		background: url('../img/logo.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 10px 15px 10px 0;
+	}
+*/
+
+	.container .jumbotron {
+		background: url("https://www.thingstododubai.com/restaurant-ramusake-dubai-picture.mjr6nc.max.jpg");
+		height: 700px;
+	}
+
+}
+
+/*small devices only*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.container .jumbotron {
+		background: url("https://www.thingstododubai.com/restaurant-ramusake-dubai-picture.mjr6nc.max.jpg");
+		height: 500px;
+	}
+
+}
+
+/*extra small devices only*/
+@media (max-width: 767px) {
+
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span{
+		font-size: 1em;
+		margin-right: 5px;
+	}
+
+}
+
+
 
 
 h1 {
