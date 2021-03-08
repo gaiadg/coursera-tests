@@ -155,6 +155,75 @@ p {
 
 /*header*/
 
+.category-tile {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #a40203;
+	opacity: .5;
+}
+ #menu-categories-title + div {
+ 	margin-bottom: 50px;
+ }
+
+ .menu-item-tile {
+ 	margin-bottom: 25px;
+ }
+
+ .menu-item-tile hr {
+ 	width: 80%
+ }
+
+ .menu-item-tile .menu-item-price {
+ 	font-size: 1.1em;
+ 	text-align: right;
+ 	margin-top:-15px;
+ 	margin-bottom:-15px;
+ }
+
+ .menu-item-photo {
+ 	position: relative;
+ 	overflow: hidden;
+ 	padding: 0;
+ 	margin-right: -15px;
+ 	margin-left: 0;
+ 	margin-bottom: 20px;
+ 	max-width: 250px;
+ }
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 40px;
+	text-align: center;
+	background-color: #a40203;
+}
+
+.menu-item-description {
+	padding-right: 30px;
+}
+
+h3 .menu-item-title {
+	margin: 0 0 10px;
+}
+
+.menu-item-details {
+	font-size: .9em;
+}
+
 /*large devices only*/
 @media (min-width: 1200px) {
 
@@ -205,6 +274,27 @@ p {
 		margin-right: 5px;
 	}
 
+	.menu-item-photo {
+		margin-right: auto;
+	}
+
+	.menu-item-title, .menu-item-price, .menu-item-description {
+		text-align: center;
+	}
+
+}
+
+/* super extra small devices only*/
+@media (max-width: 479px) {
+
+	.col-xxs-12 {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding: 0 15px 0 15px;
+		float: left;
+	}
+
 }
 
 .panel-footer {
@@ -220,3 +310,6 @@ p {
 #hours, #address  {
 	line-height: 2;
 }
+
+
+
