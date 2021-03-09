@@ -6,10 +6,8 @@
 	font-size: 20px;
 }
 
-@media (max-width: 767px) {
-
-	#description {/*
-		margin: 0 auto;
-		float: none;*/
-	}
+#main-content {
+	background-color: #234234;
+	color: #938402; 
+	padding: 20px;
 }
