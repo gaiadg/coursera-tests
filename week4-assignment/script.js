@@ -6,12 +6,13 @@
 
 	  var firstLetterCapital = names[i].charAt(0);
 	  var firstLetter = firstLetterCapital.toLowerCase();
+	  var namesToRun = names[i];
 
 	  if ( firstLetter == "j")
 	  {
-	  	byeSpeaker.speak(names[i]);
+	  	byeSpeaker.speak(namesToRun);
 	  } else {
-	  	helloSpeaker.speak(names[i]);
+	  	helloSpeaker.speak(namesToRun);
 	  }
 	}
 
