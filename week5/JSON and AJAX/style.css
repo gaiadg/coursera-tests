@@ -1,0 +1,25 @@
+body {
+	background-color: #000000;
+	font-family: cursive;
+	color: #ffffff;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+button {
+	margin: 10px auto;
+	display: block;
+	padding: 10px;
+}
+
+#pet-info {
+	text-align: center;
+}
+
+.hide-me {
+	visibility: hidden;
+}
