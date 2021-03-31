@@ -23,3 +23,11 @@ button {
 .hide-me {
 	visibility: hidden;
 }
+
+@media (max-width: 767px) {
+	
+	button {
+		display: block;
+		width: 100%;
+	}
+}
