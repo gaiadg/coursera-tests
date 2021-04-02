@@ -3,13 +3,28 @@ console.log("helo");
 var pageCounter = 1;
 var petContainer = document.getElementById("pet-info");
 var btn = document.getElementById("btn");
+
 btn.addEventListener("click", function() {
 	var ourRequest = new XMLHttpRequest();
+
 	ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
 	ourRequest.onload = function() {
-		var ourData = JSON.parse(ourRequest.responseText);
-		renderHTML(ourData);
+		if (ourRequest.status >= 200 && ourRequest.status < 400) {
+			var ourData = JSON.parse(ourRequest.responseText);
+			renderHTML(ourData);			
+		} else {
+			alert("We have a connection but there's an error");
+		}
+
 	};
+
+	ourRequest.onerror = function() {
+		alert("Connection error");
+	};
+
+
+
+
 	ourRequest.send();
 	pageCounter++;
 	if (pageCounter > 3) {
@@ -32,8 +47,19 @@ function renderHTML(data) {
 			}
 		}
 
+		htmlString += ' and dislikes ';
+
+		for (ii = 0; ii < data[i].foods.dislikes.length; ii++) {
+			if (ii == 0) {
+				htmlString += data[i].foods.dislikes[ii];
+			} else {
+				htmlString += " and " + data[i].foods.dislikes[ii];
+			}
+		}
+
 	htmlString += '.</p>';
 
 	}
+
 	petContainer.insertAdjacentHTML('beforeend', htmlString);
 }
