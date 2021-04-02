@@ -11,9 +11,8 @@ header {
 }
 
 button {
-	margin: 10px auto;
-	display: block;
-	padding: 10px;
+		display: block;
+		width: 100%;
 }
 
 #pet-info {
