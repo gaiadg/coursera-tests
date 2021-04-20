@@ -91,8 +91,7 @@ $ajaxUtils.sendGetRequest(
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
   chooseRandomCategory;
-  console.log(chooseRandomCategory);
-  var choosenRandomCategory = "'" +chooseRandomCategory + "'";
+  var choosenRandomCategory = "'" + chooseRandomCategory + "'";
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
@@ -120,8 +119,9 @@ function buildAndShowHomeHTML (categories) {
       // $dc.loadMenuItems('L')
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
-      //
-      var homeHtmlToInsertIntoMainPage = insertProperty(html, "randomCategoryShortName", choosenRandomCategory);
+      
+      var homeHtmlToInsertIntoMainPage = insertProperty(html, "randomCategoryShortName", chooseRandomCategory );
+      // console.log(chooseRandomCategory);
 
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
@@ -310,4 +310,3 @@ function insertItemPortionName(html, portionPropName, portionValue) {// If not s
 global.$dc = dc;
 
 })(window);
-
